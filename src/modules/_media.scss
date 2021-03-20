@@ -1,0 +1,18 @@
+
+// MEDIA QUERIES
+
+@media screen and (max-width:459px) {
+    select {
+            width:95%;
+    }
+
+    header 
+        h1:first-child {
+            font-size:1.4em;
+            margin-bottom:20px;
+        }
+
+    article img {
+        display:none;
+    }
+}

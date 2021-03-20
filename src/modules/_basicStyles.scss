@@ -1,0 +1,23 @@
+
+//BASIC STYLES
+body {
+    font-family: $font-body;
+    font-size:1em;
+    line-height:2em;
+    @include backImage('../images/bg.gif');
+}
+
+main {
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+    @include break(959) {
+        width: 768px;
+    }
+    @include break(767) {
+        width: 460px;
+    }
+    @include break(459) {
+        width: 300px;
+    }
+}

@@ -1,0 +1,28 @@
+@mixin backImage($image) {
+    background-image: url($image);
+    background-color: $white; 
+    background-repeat: repeat-x;
+}
+
+@mixin logoImage($image) {
+    width:400px;
+    height:190px;
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+    float:left;
+    display:block;
+    margin:0;
+
+}
+
+@mixin socialImage($x) {
+     background-position-x: $x * -38px;
+     background-image: url('../images/social-media.png');
+}
+
+@mixin break($arg) {
+    @media (max-width: $arg + 0px) {
+        @content;
+    }
+}
